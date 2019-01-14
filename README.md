@@ -3,7 +3,7 @@ As a part of a class project, I worked on a Cancer Detection problem.
 
 ## Motivation
 
-1. We can radically reduce the misdiagnosis rate for common procedures such as that is tissue pathology diagnosis using basic deep learning techniques and simple neural net architectures. 
+1. We can radically reduce the misdiagnosis rate for common procedures such as that in tissue pathology diagnosis using basic deep learning techniques and simple neural net architectures. 
 2. Visual detection is tedious and error-prone.
 3. Tissue samples to be examined are volumes, and can give us many sample images when sliced.
 4. Some tumors can be really small, causing errors in human reading. 
@@ -11,8 +11,8 @@ As a part of a class project, I worked on a Cancer Detection problem.
 
 ## Goal
 
-Given a collection of training data, create a model that outputs a heatmap showing regions in the biopsy image that are likely to contain cancer. 
-The goal is to assistand not completely replace pathologists. 
+- Given a collection of training data, create a model that outputs a heatmap showing regions in the biopsy image that are likely to contain cancer. 
+- The goal is to assist and not completely replace pathologists. 
 
 ## Data Available
 
@@ -41,5 +41,14 @@ The goal is to assistand not completely replace pathologists.
 
 Finally, divide the data into train, test and val, define an evaluation metric suitable for the problem, and evaluate results by visualising them on a heatmap. 
 
-Link to full video despcription of the project with code explanation: https://www.youtube.com/watch?v=8QrkNKpMl9o&t=25s
+## Challenges and Approaches that did not work
+
+- Using patches from just one slide gave very little information. 
+- Using patches from all slides made the data more imbalanced than it already was because a lot of the patches were just empty. 
+- A shallow model was not able to detect subtle differences between cancer and non-cancer regions. 
+- Using just recall or accuracy as success metrics: makes the model either predict all as cancer or none, because of the tremendous imbalance. 
+- Using a deep architecture with pre-defined weights (ImageNet in particular: does not work for pathology images)
+
+
+Link to full video description of the project with code explanation: https://www.youtube.com/watch?v=8QrkNKpMl9o&t=25s
 
