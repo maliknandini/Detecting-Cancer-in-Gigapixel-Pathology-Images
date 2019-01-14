@@ -23,17 +23,17 @@ The goal is to assistand not completely replace pathologists.
 
 ## Approach
 
-# Pre-Processing 
+### Pre-Processing 
 
 - Apply monotone masks to WSI's
 - Calculate percentage tissue in each slide and only take the ones that have at least some amount of tissue. 
 
-# Extracting samples and assigning labels
+### Extracting samples and assigning labels
 
 - Slide a fixed-size window over the slide at a fixed zoom level. 
 - Look at the corresponding window in the mask, and assign label as 1 if at least 1 pixel is non-0 in this mask patch. 
 
-# Data is quite imbalanced. Try approaches such as the following to make it balanced : 
+### Data is quite imbalanced. Try approaches such as the following to make it balanced : 
 
 - Oversampling
 - Downsampling
