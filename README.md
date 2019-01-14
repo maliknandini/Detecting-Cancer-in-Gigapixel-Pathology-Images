@@ -52,3 +52,5 @@ Finally, divide the data into train, test and a hold out val, define an evaluati
 
 Link to full video description of the project with code explanation: https://www.youtube.com/watch?v=8QrkNKpMl9o&t=25s
 
+Instructions for running code: All .tif files must be stored in a directory in Google Drive for the python notebook to run end to end. 
+
