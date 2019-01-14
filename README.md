@@ -39,7 +39,7 @@ As a part of a class project, I worked on a Cancer Detection problem.
 - Downsampling
 - Augmentation
 
-Finally, divide the data into train, test and val, define an evaluation metric suitable for the problem, and evaluate results by visualising them on a heatmap. 
+Finally, divide the data into train, test and a hold out val, define an evaluation metric suitable for the problem, and evaluate results by visualising them on a heatmap. 
 
 ## Challenges and Approaches that did not work
 
